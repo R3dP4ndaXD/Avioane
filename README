@@ -1,0 +1,18 @@
+Task 1:     Folosesc un pointer auxiliar(idx) care puncteza catre aceeasi zona de memorie ca vectorul info pe care il folosesc pentru accesa fiecare atribut din vector incrememntandul pe idx cu nr
+            variabil de bytes, in functie de tipul atributului catre care puncteza in vector(pentru a il interpreta in mod corespunzator).
+
+Task 2:     Parcurg asemanator vectorul, pentru fiecare avion salvez coordonatele(x, y), directia(dir) si tipul(tip) si folosesc doua variabile(lin si col) pentru a parcurge si modifica matricea  
+            in forma avionului(data de tip si de directia de deplasare).
+
+Task 3:     Apeleza functia qsort pentru vectorul info pentru a sorta avioanlele. Functia practic sorteaza blocurile de bytes dedicate fiecarui avion fara a face prelucrari in interior.
+            In functia de comparare am creat niste pointeri, pornind de la ponterii a doua avioane, catre atributele dupa care se face compararea lor.
+            La final, afisez vectorul de avioane sortat.
+
+Task 4:     Aloc o matrice in care plantez obstaculele la pozitiile identificate in vectorii de coordonate.
+            Parcurg vectorul de avione cu un pointer auxiliar, salvez informatiile de interes despre fiecare avion in cateva varialile in functie de care decid forma si orientare avionului.
+            Parcurg matricea pe forma avionului si in spatiul acoperit de acesta in deplasarea lui pana la intalnirea cu marginea matricei. Parcurgea se face pana la intanirea primului obstacol, iar in lipsa acestuia, dupa parcurgerea integrala a traseului, avionul e consemnat ca avand o deplasare sigura. 
+            Dupa ce verific deplasarile tuturor avioanelor, afisez numarul avioanelor care se vor deplasa in siguranta si eliberez matricea cu obstacole.
+
+Task 5:     Aloc o matrice in care plantez obstaculele la pozitiile identificate in vectorii de coordonate.
+            Parcurg vectorul de avione ca la taskurile 2 si 4 pentru fiecare moment de timp t de la 0 la T, iar cand inregistrez coordonatele tin cont si de modificarea lor cu v*t unitati in directia de deplasare.
+            Parcurg matricea pentru a cauta obstacole in sectiunile din forma avionului care se afla in spatiul matricei. Daca exista sectiuni din avion in matrice, parcurgerea se incheia la primul obstacol gasit. Cu fiecare avion verificat se consemneaza daca acesta se suprapune peste vreun obstacol. Dupa ce verific toate avioanelor la momentul t, afisez numarul avioanelor care intersecteza macar un obstacol la momentul t.
